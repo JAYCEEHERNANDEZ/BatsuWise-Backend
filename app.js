@@ -7,6 +7,11 @@ import userRoutes from './routes/userRoutes.js';
 
 dotenv.config();
 
+console.log('ENV CHECK:');
+console.log('SUPABASE_URL:', process.env.SUPABASE_URL);
+console.log('SUPABASE_KEY:', process.env.SUPABASE_KEY ? 'OK' : 'MISSING');
+console.log('SENDGRID_API_KEY:', process.env.SENDGRID_API_KEY ? 'OK' : 'MISSING');
+
 const app = express();
 
 // MIDDLEWARE
