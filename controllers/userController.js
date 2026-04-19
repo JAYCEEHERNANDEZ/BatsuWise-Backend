@@ -17,7 +17,7 @@ export const registerUser = async (req, res) => {
 
     res.status(201).json({
       message: 'User registered successfully',
-      user // ✅ clean user
+      user
     });
 
   } catch (error) {
@@ -48,7 +48,7 @@ export const loginUser = async (req, res) => {
 };
 
 // =======================
-// SEND OTP
+// SEND OTP (SUPABASE)
 // =======================
 export const sendOtp = async (req, res) => {
   try {
@@ -70,7 +70,7 @@ export const sendOtp = async (req, res) => {
 };
 
 // =======================
-// VERIFY OTP
+// VERIFY OTP (SUPABASE)
 // =======================
 export const verifyOtp = async (req, res) => {
   try {
